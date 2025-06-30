@@ -24,18 +24,18 @@ The data for this project is sourced from the Kaggle dataset:
 DROP TABLE IF EXISTS netflix;
 CREATE TABLE netflix
 (
-    show_id      VARCHAR(5),
+    show_id      VARCHAR(6),
     type         VARCHAR(10),
-    title        VARCHAR(250),
-    director     VARCHAR(550),
-    casts        VARCHAR(1050),
-    country      VARCHAR(550),
-    date_added   VARCHAR(55),
+    title        VARCHAR(150),
+    director     VARCHAR(300),
+    casts        VARCHAR(1000),
+    country      VARCHAR(150),
+    date_added   VARCHAR(50),
     release_year INT,
-    rating       VARCHAR(15),
+    rating       VARCHAR(10),
     duration     VARCHAR(15),
-    listed_in    VARCHAR(250),
-    description  VARCHAR(550)
+    listed_in    VARCHAR(150),
+    description  VARCHAR(250)
 );
 ```
 
@@ -256,28 +256,5 @@ GROUP BY category;
 
 **Objective:** Categorize content as 'Bad' if it contains 'kill' or 'violence' and 'Good' otherwise. Count the number of items in each category.
 
-## Findings and Conclusion
-
-- **Content Distribution:** The dataset contains a diverse range of movies and TV shows with varying ratings and genres.
-- **Common Ratings:** Insights into the most common ratings provide an understanding of the content's target audience.
-- **Geographical Insights:** The top countries and the average content releases by India highlight regional content distribution.
-- **Content Categorization:** Categorizing content based on specific keywords helps in understanding the nature of content available on Netflix.
-
-This analysis provides a comprehensive view of Netflix's content and can help inform content strategy and decision-making.
 
 
-
-## Author - Zero Analyst
-
-This project is part of my portfolio, showcasing the SQL skills essential for data analyst roles. If you have any questions, feedback, or would like to collaborate, feel free to get in touch!
-
-### Stay Updated and Join the Community
-
-For more content on SQL, data analysis, and other data-related topics, make sure to follow me on social media and join our community:
-
-- **YouTube**: [Subscribe to my channel for tutorials and insights](https://www.youtube.com/@zero_analyst)
-- **Instagram**: [Follow me for daily tips and updates](https://www.instagram.com/zero_analyst/)
-- **LinkedIn**: [Connect with me professionally](https://www.linkedin.com/in/najirr)
-- **Discord**: [Join our community to learn and grow together](https://discord.gg/36h5f2Z5PK)
-
-Thank you for your support, and I look forward to connecting with you!
